@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #121231;
+    color: white;
+    font-size: 1.5rem;
+}
+h1 {
+    margin: 30px auto;
+    text-align: center;
+    font-size: 3rem;
+}
+.formulaire {
+    height: auto;
+    max-width: 800px;
+    margin: 25px auto;
+}
+legend {
+    text-align: center;
+    margin-bottom: 20px;
+}
+form {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+fieldset {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 40px;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #fdf4db;
+    border-radius: 5px;
+}
+label {
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+}
+input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    background-color: #fdf4db;
+    color: #3b3b4f;
+    font-size: 1.2rem;
+}
+input:hover {
+    background-color: #121231;
+    color: #fdf4db;
+}
+.inline {
+    width: unset;
+    margin: 0 0 0 0.5em;
+    vertical-align: middle;
+
+}
+.outils-list {
+    display: block;
+    padding: 10px;
+
+}
+.radio {
+    padding: 45px 0 0 0;
+}
+.radio label {
+    margin-left: 40px;
+    position: relative;
+    top: -30px
+}
+.btn {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: #fdf4db;
+    color: white;
+    min-width: 300px;
+}
+.btn:hover {
+    background-color: #121231;
+    color: #fdf4db;
+    border-color: #121231;
+}
+textarea {
+    background-color: #fdf4db;
+    color: #3b3b4f;
+}
+textarea:hover {
+    background-color: #121231;
+    color: #fdf4db;
+}

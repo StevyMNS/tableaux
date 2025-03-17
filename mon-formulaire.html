@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mon-formulaire.css">
+    <title>Mon formulaire</title>
+</head>
+<body>
+    <h1>Mon Formulaire</h1>
+    <div class="formulaire">
+        <form action="">
+            <fieldset>
+                <legend>Veuillez remplir les informations suivantes</legend>
+                <label for="name">Entrez votre nom(s):</label>
+                <input placeholder="Votre nom(s)" type="text" id="name" name="user-name" required>
+                <label for="fist-name">Entrez votre prenom(s):</label>
+                <input placeholder="Votre prenom(s)" type="text" id="first-name" name="user-first-name" required>
+                <label for="email">Entrez votre email:</label>
+                <input placeholder="Votre email" type="email" name="email" id="email" required>
+                <label for="password">Entrez votre mot de passe:</label>
+                <input placeholder="Votre mot de passe" type="password" name="password" id="password" required>
+            </fieldset>
+            <fieldset class="radio">
+                <legend>Choisissez la formation souhaitée</legend>
+                <input class="inline" type="radio" name="formation" id="marketing">
+                <label for="marketing">Marketing Digital</label>
+                <input class="inline" type="radio" name="formation" id="dev-web" checked>
+                <label for="dev-web"> Développement Web</label>
+                <input class="inline" type="radio" name="formation" id="dev-mobile">
+                <label for="dev-mobile">Développement Mobile</label>
+            </fieldset>
+            <label for="photo">Téléchargez une photo de profil:</label>
+            <input type="file" name="photo" id="photo" required>
+            <label for="age">Entrez votre age:</label>
+            <input type="number" name="age" id="age" required value="18">
+            <label for="phone">Entrez votre tel:</label>
+            <input type="tel" name="phone" id="phone" required placeholder="Code régional"
+            pattern="[0-9]{3}"
+            aria-label="Code régional" >
+            <label for="textarea">Quelles sont vos attentes par rapport aux formations</label>
+            <textarea name="textarea" id="textarea" cols="97" rows="8">Je souhaite acquerir...</textarea>
+            <button class="btn" type="submit">Envoyez</button>
+        </form>
+    </div>
+</body>
+</html>
